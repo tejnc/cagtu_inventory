@@ -10,16 +10,16 @@ class Products(models.Model):
         return self.Name
 
 
-class Cart(models.Model):
-    Items = models.ForeignKey(Products, on_delete=models.CASCADE)
-    total_products = models.IntegerField()
+# class Cart(models.Model):
+#     Items = models.ForeignKey(Products, on_delete=models.CASCADE)
+#     total_products = models.IntegerField()
 
-    def __str__(self):
-        return self.total_products
+#     def __str__(self):
+#         return self.total_products
 
 
-class Checkout(models.Model):
-    total_price = models.FloatField()
+# class Checkout(models.Model):
+#     total_price = models.FloatField()
 
-    def __str__(self):
-        return self.total_products
+#     def __str__(self):
+#         return self.total_products
